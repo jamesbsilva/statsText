@@ -62,21 +62,22 @@ def analyzeText(text):
 
 
     # save data
-    saveListChar(charFreq,"./result/charFreqSum.txt")
-    saveList(charInitFreq,"./result/charInitFreqSum.txt")
-    saveList(charInit2Freq,"./result/charInit2FreqSum.txt")
-    saveListChar(charLowFreq,"./result/charFreqLowSum.txt")
-    saveListCharTransf(char1Freq,"./result/char1FreqSum.txt")
-    saveListCharTransf(char2Freq,"./result/char2FreqSum.txt")
-    saveList(charFreq,"./result/charFreqRawSum.txt")
-    saveList(charLowFreq,"./result/charFreqLowRawSum.txt")
-    saveList(char1Freq,"./result/char1FreqRawSum.txt")
-    saveList(char2Freq,"./result/char2FreqRawSum.txt")
-    saveList(wordLenFreq,"./result/wordLenFreqSum.txt")
-    saveList(senLenFreq,"./result/senLenFreqSum.txt")
-    saveList(wordLen1Freq,"./result/wordLen1FreqSum.txt")
-    saveList(senLen1Freq,"./result/senLen1FreqSum.txt")
-    saveDict(wordFreq,"./result/wordFreqSum.txt")
+    saveDir = "./"
+    saveListChar(charFreq,saveDir+"charFreqSum.txt")
+    saveList(charInitFreq,saveDir+"charInitFreqSum.txt")
+    saveList(charInit2Freq,saveDir+"charInit2FreqSum.txt")
+    saveListChar(charLowFreq,saveDir+"charFreqLowSum.txt")
+    saveListCharTransf(char1Freq,saveDir+"char1FreqSum.txt")
+    saveListCharTransf(char2Freq,saveDir+"char2FreqSum.txt")
+    saveList(charFreq,saveDir+"charFreqRawSum.txt")
+    saveList(charLowFreq,saveDir+"charFreqLowRawSum.txt")
+    saveList(char1Freq,saveDir+"char1FreqRawSum.txt")
+    saveList(char2Freq,saveDir+"char2FreqRawSum.txt")
+    saveList(wordLenFreq,saveDir+"wordLenFreqSum.txt")
+    saveList(senLenFreq,saveDir+"senLenFreqSum.txt")
+    saveList(wordLen1Freq,saveDir+"wordLen1FreqSum.txt")
+    saveList(senLen1Freq,saveDir+"senLen1FreqSum.txt")
+    saveDict(wordFreq,saveDir+"wordFreqSum.txt")
     return [charFreq,wordLenFreq,senLenFreq,wordFreq]
 
 def saveList(newList, fileName):
